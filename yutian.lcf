@@ -4,7 +4,8 @@
 ip-mode = dual
 dns-server = 223.5.5.5,119.29.29.29
 doh-server = https://dns.alidns.com/dns-query,https://doh.pub/dns-query
-skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,e.crashlytics.com
+skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,e.crashlytics.com,*.cmbchina.com,*.cmbimg.com,*.boc.cn,*.bankofchina.com
+real-ip = *.cmbchina.com,*.cmbimg.com,*.boc.cn,*.bankofchina.com
 bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
 geoip-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
 ipasn-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-asn.mmdb
@@ -63,6 +64,8 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Microsoft/Microsoft.list, policy=节点选择, tag=Microsoft, enabled=true
 https://adrules.top/adrules.list, policy=广告拦截, tag=广告拦截, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Apple/Apple.list, policy=DIRECT, tag=苹果直连, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/CMB/CMB.list, policy=DIRECT, tag=招商银行, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/BOC/BOC.list, policy=DIRECT, tag=中国银行, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/China/China.list, policy=DIRECT, tag=国内直连, enabled=true
 
 [Host]
