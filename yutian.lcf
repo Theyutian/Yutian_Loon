@@ -39,6 +39,7 @@ Mate = select,智能助理,自动选择,故障转移
 
 [Rule]
 DOMAIN-SUFFIX,muse.ai,智能助理
+DOMAIN-SUFFIX,xiaoheihe.cn,DIRECT
 GEOIP,CN,DIRECT
 FINAL,节点选择
 
