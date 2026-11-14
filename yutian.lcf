@@ -1,0 +1,75 @@
+# 鱼甜
+
+[General]
+ip-mode = dual
+dns-server = 223.5.5.5,119.29.29.29
+doh-server = https://dns.alidns.com/dns-query,https://doh.pub/dns-query
+skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,e.crashlytics.com
+bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+geoip-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
+ipasn-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-asn.mmdb
+
+[Proxy]
+
+[Remote Proxy]
+# 订阅不在文件里：导入后在 Loon 的「节点」页添加你自己的订阅
+
+[Remote Filter]
+全部节点 = NameRegex, FilterKey = "^(?!.*(流量|到期|过期|官网|订阅|客服|公告|教程|邀请|返利|说明|Expire|Traffic|Panel|Channel|Author)).*$"
+美国节点 = NameRegex, FilterKey = "^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|USA|United States)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
+日本节点 = NameRegex, FilterKey = "^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|JPN|Japan)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
+新国节点 = NameRegex, FilterKey = "^(?=.*((?i)🇸🇬|新加坡|狮城|(\b(SG|SGP|Singapore)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
+台湾节点 = NameRegex, FilterKey = "^(?=.*((?i)🇹🇼|台湾|(\b(TW|TWN|Tai|Taiwan)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
+香港节点 = NameRegex, FilterKey = "^(?=.*((?i)🇭🇰|香港|(\b(HK|HKG|Hong)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
+
+[Proxy Group]
+自动选择 = url-test,全部节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100
+故障转移 = fallback,美国自动,日本自动,新国自动,自动选择,interval = 300,max-timeout = 2000
+美国自动 = url-test,美国节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100
+日本自动 = url-test,日本节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100
+新国自动 = url-test,新国节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100
+台湾自动 = url-test,台湾节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100
+香港自动 = url-test,香港节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100
+节点选择 = select,自动选择,故障转移,美国自动,日本自动,新国自动,台湾自动,香港自动,全部节点
+智能助理 = select,美国自动,日本自动,新国自动,台湾自动,故障转移
+Mate = select,智能助理,自动选择,故障转移
+流媒体 = select,美国自动,日本自动,新国自动,节点选择
+游戏 = select,香港自动,台湾自动,日本自动,新国自动,节点选择
+广告拦截 = select,REJECT,DIRECT
+
+[Rule]
+DOMAIN-SUFFIX,muse.ai,智能助理
+GEOIP,CN,DIRECT
+FINAL,节点选择
+
+[Remote Rule]
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/UnionPay/UnionPay.list, policy=DIRECT, tag=云闪付, enabled=true
+https://github.com/KnowSky404/ProxyKit/raw/refs/heads/main/loon/rules/wechat.list, policy=DIRECT, tag=微信, enabled=true
+https://raw.githubusercontent.com/viewer12/OverseasAI.list/main/rule/Loon/OverseasAI/OverseasAI.list, policy=智能助理, tag=AI, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Facebook/Facebook.list, policy=Mate, tag=Facebook, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Instagram/Instagram.list, policy=Mate, tag=Instagram, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Whatsapp/Whatsapp.list, policy=Mate, tag=WhatsApp, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Threads/Threads.list, policy=Mate, tag=Threads, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Telegram/Telegram.list, policy=节点选择, tag=Telegram, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Twitter/Twitter.list, policy=节点选择, tag=Twitter, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/GitHub/GitHub.list, policy=节点选择, tag=GitHub, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Google/Google.list, policy=节点选择, tag=Google, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/YouTube/YouTube.list, policy=流媒体, tag=YouTube, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Netflix/Netflix.list, policy=流媒体, tag=Netflix, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/TikTok/TikTok.list, policy=流媒体, tag=TikTok, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Spotify/Spotify.list, policy=流媒体, tag=Spotify, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Steam/Steam.list, policy=游戏, tag=Steam, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Microsoft/Microsoft.list, policy=节点选择, tag=Microsoft, enabled=true
+https://adrules.top/adrules.list, policy=广告拦截, tag=广告拦截, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Apple/Apple.list, policy=DIRECT, tag=苹果直连, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/China/China.list, policy=DIRECT, tag=国内直连, enabled=true
+
+[Host]
+
+[Plugin]
+https://github.com/fmz200/wool_scripts/raw/main/Loon/plugin/blockAds.plugin, enabled=true
+
+[Mitm]
+hostname =
+ca-p12 =
+ca-passphrase =
