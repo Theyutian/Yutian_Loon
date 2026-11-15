@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="964" viewBox="0 0 1240 964" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans CJK SC','Microsoft YaHei',sans-serif">
+<rect width="1240" height="964" fill="#ffffff"/>
+<text x="40" y="56" font-size="30" font-weight="700" fill="#111827">分流总览</text>
+<text x="40" y="88" font-size="16" fill="#6b7280">一份名单只有一个归属 · 规则自上而下匹配 · 另有 GEOIP 国内直连兜底</text>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9ca3af"/></marker></defs>
+<rect x="40" y="118" width="520" height="86" rx="14" fill="#f9fafb" stroke="#e5e7eb"/>
+<rect x="40" y="118" width="6" height="86" rx="3" fill="#7c3aed"/>
+<text x="70" y="154" font-size="21" font-weight="700" fill="#111827">AI 应用</text>
+<text x="70" y="182" font-size="15" fill="#6b7280">ChatGPT · Claude · Gemini · Copilot</text>
+<line x1="580" y1="161" x2="700" y2="161" stroke="#9ca3af" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="720" y="118" width="480" height="86" rx="14" fill="#f5f3ff" stroke="#e5e7eb"/>
+<text x="750" y="156" font-size="22" font-weight="700" fill="#7c3aed">智能助理</text>
+<text x="750" y="184" font-size="15" fill="#6b7280">首选专供 AI 的专线节点</text>
+<rect x="40" y="218" width="520" height="86" rx="14" fill="#f9fafb" stroke="#e5e7eb"/>
+<rect x="40" y="218" width="6" height="86" rx="3" fill="#2563eb"/>
+<text x="70" y="254" font-size="21" font-weight="700" fill="#111827">Meta 全家</text>
+<text x="70" y="282" font-size="15" fill="#6b7280">Facebook · Instagram · WhatsApp · Threads</text>
+<line x1="580" y1="261" x2="700" y2="261" stroke="#9ca3af" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="720" y="218" width="480" height="86" rx="14" fill="#eff6ff" stroke="#e5e7eb"/>
+<text x="750" y="256" font-size="22" font-weight="700" fill="#2563eb">Mate</text>
+<text x="750" y="284" font-size="15" fill="#6b7280">经「智能助理」出站</text>
+<rect x="40" y="318" width="520" height="86" rx="14" fill="#f9fafb" stroke="#e5e7eb"/>
+<rect x="40" y="318" width="6" height="86" rx="3" fill="#e11d48"/>
+<text x="70" y="354" font-size="21" font-weight="700" fill="#111827">流媒体</text>
+<text x="70" y="382" font-size="15" fill="#6b7280">YouTube · Netflix · TikTok · Spotify</text>
+<line x1="580" y1="361" x2="700" y2="361" stroke="#9ca3af" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="720" y="318" width="480" height="86" rx="14" fill="#fff1f2" stroke="#e5e7eb"/>
+<text x="750" y="356" font-size="22" font-weight="700" fill="#e11d48">流媒体</text>
+<text x="750" y="384" font-size="15" fill="#6b7280">美 / 日 / 新地区自动组</text>
+<rect x="40" y="418" width="520" height="86" rx="14" fill="#f9fafb" stroke="#e5e7eb"/>
+<rect x="40" y="418" width="6" height="86" rx="3" fill="#059669"/>
+<text x="70" y="454" font-size="21" font-weight="700" fill="#111827">游戏</text>
+<text x="70" y="482" font-size="15" fill="#6b7280">Steam · 游戏流量</text>
+<line x1="580" y1="461" x2="700" y2="461" stroke="#9ca3af" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="720" y="418" width="480" height="86" rx="14" fill="#ecfdf5" stroke="#e5e7eb"/>
+<text x="750" y="456" font-size="22" font-weight="700" fill="#059669">游戏</text>
+<text x="750" y="484" font-size="15" fill="#6b7280">港 / 台 / 日 / 新低延迟优先</text>
+<rect x="40" y="518" width="520" height="86" rx="14" fill="#f9fafb" stroke="#e5e7eb"/>
+<rect x="40" y="518" width="6" height="86" rx="3" fill="#d97706"/>
+<text x="70" y="554" font-size="21" font-weight="700" fill="#111827">常用服务</text>
+<text x="70" y="582" font-size="15" fill="#6b7280">Telegram · Twitter · GitHub · Google · 微软</text>
+<line x1="580" y1="561" x2="700" y2="561" stroke="#9ca3af" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="720" y="518" width="480" height="86" rx="14" fill="#fffbeb" stroke="#e5e7eb"/>
+<text x="750" y="556" font-size="22" font-weight="700" fill="#d97706">节点选择</text>
+<text x="750" y="584" font-size="15" fill="#6b7280">总出口，手动可控</text>
+<rect x="40" y="618" width="520" height="86" rx="14" fill="#f9fafb" stroke="#e5e7eb"/>
+<rect x="40" y="618" width="6" height="86" rx="3" fill="#0f766e"/>
+<text x="70" y="654" font-size="21" font-weight="700" fill="#111827">国内与银行</text>
+<text x="70" y="682" font-size="15" fill="#6b7280">云闪付 · 微信 · 招商银行 · 中国银行 · 苹果服务</text>
+<line x1="580" y1="661" x2="700" y2="661" stroke="#9ca3af" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="720" y="618" width="480" height="86" rx="14" fill="#f0fdfa" stroke="#e5e7eb"/>
+<text x="750" y="656" font-size="22" font-weight="700" fill="#0f766e">直连 DIRECT</text>
+<text x="750" y="684" font-size="15" fill="#6b7280">不绕路、不解密</text>
+<rect x="40" y="718" width="520" height="86" rx="14" fill="#f9fafb" stroke="#e5e7eb"/>
+<rect x="40" y="718" width="6" height="86" rx="3" fill="#111827"/>
+<text x="70" y="754" font-size="21" font-weight="700" fill="#111827">广告追踪</text>
+<text x="70" y="782" font-size="15" fill="#6b7280">广告与追踪域名</text>
+<line x1="580" y1="761" x2="700" y2="761" stroke="#9ca3af" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="720" y="718" width="480" height="86" rx="14" fill="#f3f4f6" stroke="#e5e7eb"/>
+<text x="750" y="756" font-size="22" font-weight="700" fill="#111827">广告拦截</text>
+<text x="750" y="784" font-size="15" fill="#6b7280">REJECT 直接掐断</text>
+<rect x="40" y="818" width="520" height="86" rx="14" fill="#f9fafb" stroke="#e5e7eb"/>
+<rect x="40" y="818" width="6" height="86" rx="3" fill="#6b7280"/>
+<text x="70" y="854" font-size="21" font-weight="700" fill="#111827">其余流量</text>
+<text x="70" y="882" font-size="15" fill="#6b7280">未命中以上任何规则</text>
+<line x1="580" y1="861" x2="700" y2="861" stroke="#9ca3af" stroke-width="2.5" marker-end="url(#ar)"/>
+<rect x="720" y="818" width="480" height="86" rx="14" fill="#f9fafb" stroke="#e5e7eb"/>
+<text x="750" y="856" font-size="22" font-weight="700" fill="#6b7280">节点选择</text>
+<text x="750" y="884" font-size="15" fill="#6b7280">FINAL 兜底</text>
+<text x="40" y="946" font-size="14" fill="#6b7280">小黑盒全域名直连 · 酷安热搜广告已做重写拦截 · 银行域名另有 skip-proxy 绕隧道处理</text>
+</svg>

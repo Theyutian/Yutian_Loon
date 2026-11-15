@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="742" viewBox="0 0 1240 742" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans CJK SC','Microsoft YaHei',sans-serif">
+<rect width="1240" height="742" fill="#ffffff"/>
+<text x="40" y="56" font-size="30" font-weight="700" fill="#111827">策略组结构</text>
+<text x="40" y="88" font-size="16" fill="#6b7280">13 个策略组 · 两个枢纽：节点选择（总出口）与智能助理（AI）</text>
+<rect x="40" y="118" width="580" height="168" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+<rect x="40" y="118" width="580" height="58" rx="14" fill="#fffbeb"/>
+<rect x="40" y="162" width="580" height="14" fill="#fffbeb"/>
+<text x="64" y="156" font-size="21" font-weight="700" fill="#d97706">节点选择</text>
+<rect x="430" y="134" width="172" height="26" rx="13" fill="#ffffff" stroke="#e5e7eb"/>
+<text x="441" y="152" font-size="13" fill="#6b7280">手动选择 · 总出口</text>
+<text x="64" y="210" font-size="15.5" fill="#374151">成员：自动选择 · 故障转移 · 全部节点（手选）</text>
+<text x="64" y="242" font-size="15.5" fill="#374151">地区组：美国 · 日本 · 新国 · 台湾 · 香港自动</text>
+<rect x="640" y="118" width="580" height="168" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+<rect x="640" y="118" width="580" height="58" rx="14" fill="#f5f3ff"/>
+<rect x="640" y="162" width="580" height="14" fill="#f5f3ff"/>
+<text x="664" y="156" font-size="21" font-weight="700" fill="#7c3aed">智能助理</text>
+<rect x="1000" y="134" width="202" height="26" rx="13" fill="#ffffff" stroke="#e5e7eb"/>
+<text x="1011" y="152" font-size="13" fill="#6b7280">手动选择 · AI 枢纽</text>
+<text x="664" y="210" font-size="15.5" fill="#374151">首选：AI专线（按名称过滤专供 AI 的节点）</text>
+<text x="664" y="242" font-size="15.5" fill="#374151">备选：美国 · 日本 · 新国 · 台湾自动 · 故障转移</text>
+<rect x="40" y="304" width="580" height="168" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+<rect x="40" y="304" width="580" height="58" rx="14" fill="#eff6ff"/>
+<rect x="40" y="348" width="580" height="14" fill="#eff6ff"/>
+<text x="64" y="342" font-size="21" font-weight="700" fill="#2563eb">Mate</text>
+<rect x="370" y="320" width="232" height="26" rx="13" fill="#ffffff" stroke="#e5e7eb"/>
+<text x="381" y="338" font-size="13" fill="#6b7280">手动选择 · Meta 专用</text>
+<text x="64" y="396" font-size="15.5" fill="#374151">成员：智能助理 · 自动选择 · 故障转移</text>
+<text x="64" y="428" font-size="15.5" fill="#374151">承载 Facebook / Instagram / WhatsApp / Threads</text>
+<rect x="640" y="304" width="580" height="168" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+<rect x="640" y="304" width="580" height="58" rx="14" fill="#fff1f2"/>
+<rect x="640" y="348" width="580" height="14" fill="#fff1f2"/>
+<text x="664" y="342" font-size="21" font-weight="700" fill="#e11d48">流媒体</text>
+<rect x="1120" y="320" width="82" height="26" rx="13" fill="#ffffff" stroke="#e5e7eb"/>
+<text x="1131" y="338" font-size="13" fill="#6b7280">手动选择</text>
+<text x="664" y="396" font-size="15.5" fill="#374151">成员：美国 · 日本 · 新国自动 · 节点选择</text>
+<text x="664" y="428" font-size="15.5" fill="#374151">承载 YouTube / Netflix / TikTok / Spotify</text>
+<rect x="40" y="490" width="580" height="168" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+<rect x="40" y="490" width="580" height="58" rx="14" fill="#ecfdf5"/>
+<rect x="40" y="534" width="580" height="14" fill="#ecfdf5"/>
+<text x="64" y="528" font-size="21" font-weight="700" fill="#059669">游戏</text>
+<rect x="520" y="506" width="82" height="26" rx="13" fill="#ffffff" stroke="#e5e7eb"/>
+<text x="531" y="524" font-size="13" fill="#6b7280">手动选择</text>
+<text x="64" y="582" font-size="15.5" fill="#374151">成员：香港 · 台湾 · 日本 · 新国自动 · 节点选择</text>
+<text x="64" y="614" font-size="15.5" fill="#374151">低延迟地区优先</text>
+<rect x="640" y="490" width="580" height="168" rx="14" fill="#ffffff" stroke="#e5e7eb"/>
+<rect x="640" y="490" width="580" height="58" rx="14" fill="#f3f4f6"/>
+<rect x="640" y="534" width="580" height="14" fill="#f3f4f6"/>
+<text x="664" y="528" font-size="21" font-weight="700" fill="#111827">广告拦截</text>
+<rect x="1120" y="506" width="82" height="26" rx="13" fill="#ffffff" stroke="#e5e7eb"/>
+<text x="1131" y="524" font-size="13" fill="#6b7280">手动选择</text>
+<text x="664" y="582" font-size="15.5" fill="#374151">成员：REJECT（默认）· DIRECT</text>
+<text x="664" y="614" font-size="15.5" fill="#374151">配合 blockAds 插件做双层去广告</text>
+<text x="40" y="706" font-size="14.5" fill="#6b7280">自动组说明：自动选择对全部节点测速取最快 · 故障转移按 美 → 日 → 新 → 自动 顺序接管 · 各地区组按节点名称自动过滤，测速间隔 300 秒</text>
+</svg>
