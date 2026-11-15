@@ -22,6 +22,7 @@ ipasn-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country
 新国节点 = NameRegex, FilterKey = "^(?=.*((?i)🇸🇬|新加坡|狮城|(\b(SG|SGP|Singapore)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
 台湾节点 = NameRegex, FilterKey = "^(?=.*((?i)🇹🇼|台湾|(\b(TW|TWN|Tai|Taiwan)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
 香港节点 = NameRegex, FilterKey = "^(?=.*((?i)🇭🇰|香港|(\b(HK|HKG|Hong)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
+AI专线 = NameRegex, FilterKey = "AI JUST FOR AGENT"
 
 [Proxy Group]
 自动选择 = url-test,全部节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100
@@ -32,7 +33,7 @@ ipasn-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country
 台湾自动 = url-test,台湾节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100
 香港自动 = url-test,香港节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100
 节点选择 = select,自动选择,故障转移,美国自动,日本自动,新国自动,台湾自动,香港自动,全部节点
-智能助理 = select,美国自动,日本自动,新国自动,台湾自动,故障转移
+智能助理 = select,AI专线,美国自动,日本自动,新国自动,台湾自动,故障转移
 Mate = select,智能助理,自动选择,故障转移
 流媒体 = select,美国自动,日本自动,新国自动,节点选择
 游戏 = select,香港自动,台湾自动,日本自动,新国自动,节点选择
