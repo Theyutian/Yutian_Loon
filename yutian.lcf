@@ -75,7 +75,14 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/
 ^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch reject-dict
 
 [Plugin]
-https://github.com/fmz200/wool_scripts/raw/main/Loon/plugin/blockAds.plugin, enabled=true
+https://raw.githubusercontent.com/Theyutian/Yutian_Loon/main/plugins/blockAds-boc-fix.plugin, enabled=true
+https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/Block_HTTPDNS.plugin, enabled=true
+https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/split/partZ/ChinaUnicom.lpx, enabled=true
+https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/release/loon/plugin/bilibili.lpx, enabled=true
+https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/WeChatMiniAds.plugin, enabled=true
+https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/weibo.plugin, enabled=true
+https://raw.githubusercontent.com/MaYIHEI/paperclip/main/loon/ipquality-web-test/ipquality-web-test.lpx, enabled=true
+https://raw.githubusercontent.com/mosenwoek/proxy_app/refs/heads/main/Loon/lpx-plugin/raw-inline-preview.lpx, enabled=true
 
 [Mitm]
 hostname =
