@@ -99,6 +99,7 @@ https://raw.githubusercontent.com/Peng-YM/Loon-Gallery/master/loon-gallery.plugi
 https://github.com/Biliverse/ADBlock/releases/latest/download/BiliBili.ADBlock.plugin, enabled=false
 https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/Auto_Join_TF.plugin, enabled=false
 https://kelee.one/Tool/Loon/Lpx/Script-Hub.lpx, enabled=false
+https://raw.githubusercontent.com/Tartarus2014/Loon-Script/refs/heads/master/Plugin/Block/hgdj.lpx, enabled=true
 
 [Mitm]
 hostname =
