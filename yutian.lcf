@@ -83,6 +83,8 @@ https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/WeChatMin
 https://raw.githubusercontent.com/fmz200/wool_scripts/main/Loon/plugin/weibo.plugin, enabled=true
 https://raw.githubusercontent.com/MaYIHEI/paperclip/main/loon/ipquality-web-test/ipquality-web-test.lpx, enabled=true
 https://raw.githubusercontent.com/mosenwoek/proxy_app/refs/heads/main/Loon/lpx-plugin/raw-inline-preview.lpx, enabled=true
+https://raw.githubusercontent.com/xxzhil/loon/main/PCDN-Block.plugin, enabled=true
+https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/Loon-parser.plugin, enabled=true
 
 [Mitm]
 hostname =
