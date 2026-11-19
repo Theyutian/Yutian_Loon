@@ -25,19 +25,19 @@ ipasn-url = https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country
 AI专线 = NameRegex, FilterKey = "AI JUST FOR AGENT"
 
 [Proxy Group]
-自动选择 = url-test,全部节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100
-故障转移 = fallback,美国自动,日本自动,新国自动,自动选择,interval = 300,max-timeout = 2000
-美国自动 = url-test,美国节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100
-日本自动 = url-test,日本节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100
-新国自动 = url-test,新国节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100
-台湾自动 = url-test,台湾节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100
-香港自动 = url-test,香港节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100
-节点选择 = select,自动选择,故障转移,美国自动,日本自动,新国自动,台湾自动,香港自动,全部节点
-智能助理 = select,AI专线,美国自动,日本自动,新国自动,台湾自动,故障转移
-Mate = select,智能助理,自动选择,故障转移
-流媒体 = select,美国自动,日本自动,新国自动,节点选择
-游戏 = select,香港自动,台湾自动,日本自动,新国自动,节点选择
-广告拦截 = select,REJECT,DIRECT
+自动选择 = url-test,全部节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Auto.png
+故障转移 = fallback,美国自动,日本自动,新国自动,自动选择,interval = 300,max-timeout = 2000,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Available.png
+美国自动 = url-test,美国节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+日本自动 = url-test,日本节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
+新国自动 = url-test,新国节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
+台湾自动 = url-test,台湾节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+香港自动 = url-test,香港节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 100,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
+节点选择 = select,自动选择,故障转移,美国自动,日本自动,新国自动,台湾自动,香港自动,全部节点,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+智能助理 = select,AI专线,美国自动,日本自动,新国自动,台湾自动,故障转移,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
+Mate = select,智能助理,自动选择,故障转移,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Instagram.png
+流媒体 = select,美国自动,日本自动,新国自动,节点选择,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png
+游戏 = select,香港自动,台湾自动,日本自动,新国自动,节点选择,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/GAME.png
+广告拦截 = select,REJECT,DIRECT,img-url = https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png
 
 [Rule]
 DOMAIN-SUFFIX,muse.ai,智能助理
