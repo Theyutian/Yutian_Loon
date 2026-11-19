@@ -1,0 +1,19 @@
+{
+  "app": "Muse",
+  "permanent_quota": {
+    "total": "30B",
+    "total_tokens": 30000000000,
+    "used_percent": 0,
+    "used": "0",
+    "left": "30B",
+    "left_tokens": 30000000000,
+    "remaining_percent": 100,
+    "resets": false
+  },
+  "permanent_total": "30B",
+  "permanent_left": "30B",
+  "permanent_used_percent": 0,
+  "additional_tokens_percent_used": 0,
+  "additional_tokens_left": "30B",
+  "updated_at": "2026-11-19T09:20:00+08:00"
+}
