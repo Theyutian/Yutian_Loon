@@ -8,12 +8,29 @@
     "left": "30B",
     "left_tokens": 30000000000,
     "remaining_percent": 100,
-    "resets": false
+    "resets": false,
+    "total_number": 30000000000,
+    "left_number": 30000000000,
+    "used_number": 0
   },
   "permanent_total": "30B",
   "permanent_left": "30B",
   "permanent_used_percent": 0,
   "additional_tokens_percent_used": 0,
   "additional_tokens_left": "30B",
-  "updated_at": "2026-11-19T09:20:00+08:00"
+  "updated_at": "2026-11-19T09:20:00+08:00",
+  "permanent": {
+    "total_tokens": 30000000000,
+    "used_tokens": 0,
+    "left_tokens": 30000000000,
+    "used_percent": 0,
+    "remaining_percent": 100,
+    "total": 30000000000,
+    "used": 0,
+    "left": 30000000000
+  },
+  "permanent_total_tokens": 30000000000,
+  "permanent_left_tokens": 30000000000,
+  "extra_tokens": 30000000000,
+  "balance_tokens": 30000000000
 }
