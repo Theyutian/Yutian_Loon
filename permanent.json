@@ -18,7 +18,7 @@
   "permanent_used_percent": 0,
   "additional_tokens_percent_used": 0,
   "additional_tokens_left": "30B",
-  "updated_at": "2026-11-21T08:42:48+08:00",
+  "updated_at": "2026-11-22T08:42:30+08:00",
   "permanent": {
     "total_tokens": 30000000000,
     "used_tokens": 0,
