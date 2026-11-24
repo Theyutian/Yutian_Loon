@@ -1,18 +1,18 @@
 {
   "plan": "Free",
-  "percent_used": 14,
+  "percent_used": 15,
   "resets_at": "2026-11-24T18:24:00+08:00",
-  "updated_at": "2026-11-23T08:42:46+08:00",
+  "updated_at": "2026-11-24T08:42:38+08:00",
   "additional_tokens": {
     "percent_used": 0,
     "left_label": "30B"
   },
   "app": "Muse",
   "subscribed": false,
-  "usage_percent": 14,
-  "used_percent": 14,
-  "remaining_percent": 86,
-  "weekly_usage_percent": 14,
+  "usage_percent": 15,
+  "used_percent": 15,
+  "remaining_percent": 85,
+  "weekly_usage_percent": 15,
   "reset_at": "2026-11-24T18:24:00+08:00",
   "reset_text": "11月24日 18:24 重置"
 }
